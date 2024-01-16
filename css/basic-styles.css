@@ -1,0 +1,77 @@
+:root {
+    --primary-text-color: #292D32;
+    --accent-text-color: #16C098;
+    --title-header-sub-text-color: #838383;
+
+    --button-background-color: #16C098;
+    --hover-button-background-color: #436dbb;
+
+    --primary-background-color: #e5e7f0;
+    --secondary-background-color: #FFFFFF;
+
+    --main-text-font: 'Poppins', sans-serif;
+    
+    --cubic: 0.4, 0, 0.2, 1;
+    --transition-duration: 250ms;
+}
+
+.body-container {
+    color: var(--primary-text-color);
+    background-color: var(--secondary-background-color);
+    font-family: var(--main-text-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.container {
+    background-color: var(--primary-background-color);
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 375px) {
+    .container {
+        width: 375px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1440px;
+        padding: 30px;
+    }
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
