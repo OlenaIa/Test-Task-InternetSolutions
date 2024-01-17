@@ -8,6 +8,7 @@
 
     --primary-background-color: #e5e7f0;
     --secondary-background-color: #FFFFFF;
+    --accent-background-color: #636060;
 
     --main-text-font: 'Poppins', sans-serif;
     
@@ -53,7 +54,8 @@
 }
 
 h1,
-h2 {
+h2,
+h3 {
     margin: 0;
 }
 
