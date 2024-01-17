@@ -62,12 +62,14 @@
     margin-bottom: 0;
 }
 
-.size-section_list,
-.gravering-section_list {
+.common_list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+.size-section_list {
     gap: 32px;
 }
 
@@ -106,10 +108,10 @@
 .size-section_item:hover>.size,
 .size-section_item:focus>.size {
     color: var(--accent-text-color);
-};
+}
 
 .gravering-section_list {
-    width: 224px;
+    align-items: flex-start;
     gap: 12px;
 }
 
@@ -117,6 +119,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 224px;
     gap: 12px;
     padding: 12px;
 }
@@ -136,6 +139,8 @@
 
 .gravering-img {
     border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
     object-fit: cover;
     transition: all var(--transition-duration) cubic-bezier(var(--cubic));
 }
@@ -143,7 +148,7 @@
 .gravering-number {
     position: absolute;
     bottom: -30px;
-    left: calc(100px - 30px);
+    left: calc(100%/2 - 30px);    
     z-index: 10;
     display: flex;
     align-items: center;
@@ -167,6 +172,10 @@
     transform: scale(1.05);
 }
 
+.gravering-text {
+    text-align: justify;
+}
+
 @media screen and (min-width: 768px) {
 
     .map-section {
@@ -181,9 +190,12 @@
         justify-content: space-between;
     }
 
-    .size-section_list,
-    .gravering-section_list {
+    .size-section_list {
         width: 500px;
+    }
+
+    .gravering-section_list {
+        width: calc(224px * 3 + 12px * 2);
     }
 }
 
